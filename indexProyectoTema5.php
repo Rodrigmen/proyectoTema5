@@ -78,7 +78,7 @@
                             </a>
                         </td>
                         <td class="iconos">
-                            <a href="mostrarcodigo/mostrarEjercicio01PDO.php">
+                            <a href="mostrarcodigo/mostrarEjercicio01.php">
                                 <img class="imgejer" src="webroot/css/images/mostrar.png" alt="MostrarPDO" title="MostrarPDO"/>
                             </a>
                         </td>
@@ -88,12 +88,12 @@
                     <tr>
                         <td class="enunciado">[Ejercicio 02] - Control de acceso con la función header() y la tabla 'Usuario'.</td>
                         <td class="iconos">
-                            <a href="codigoPHP/ejercicio02PDO.php">
+                            <a href="codigoPHP/ejercicio02.php">
                                 <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="EjecutarPDO" title="EjecutarPDO"/>
                             </a>
                         </td>
                         <td class="iconos">
-                            <a href="mostrarcodigo/mostrarEjercicio02PDO.php">
+                            <a href="mostrarcodigo/mostrarEjercicio02.php">
                                 <img class="imgejer" src="webroot/css/images/mostrar.png" alt="MostrarPDO" title="MostrarPDO"/>
                             </a>
                         </td>

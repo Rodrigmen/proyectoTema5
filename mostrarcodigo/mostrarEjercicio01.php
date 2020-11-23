@@ -12,7 +12,7 @@
              * Mostrar ejercicio01.
              * 
              * @version 1.0.0
-             * @since 14-10-2020
+             * @since 23-11-2020
              * @author Rodrigo Robles <rodrigo.robmin@educa.jcyl.es>
              */
         

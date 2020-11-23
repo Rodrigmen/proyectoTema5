@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ejercicio01 - DWES</title>
+        <title>ejercicio00 - DWES</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/jpg" href="../webroot/css/images/favicon.jpg" /> 
@@ -30,7 +30,7 @@
         <table>
             <?php
             /**
-             * Mostrar el contenido de las variables superglobales y phpinfo()).
+             * Mostrar el contenido de las variables superglobales y phpinfo().
              * 
              * @version 1.0.0
              * @since 23-11-2020
