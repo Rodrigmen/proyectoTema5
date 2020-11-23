@@ -51,6 +51,18 @@
                             <p class="casper">         </p>
                         </td>
                     </tr>
+                    <!-- ARCHIVOS DE CONFIGURACION-->
+                    <tr>
+                        <td class="enunciado">ARCHIVOS DE CONFIGURACIÓN</td>
+                        <td class="iconos">
+                            <a href="mostrarcodigo/mostrarConf.php">
+                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="Mostrar" title="Mostrar"/>
+                            </a>
+                        </td>
+                        <td>
+                            <p class="casper">         </p>
+                        </td>
+                    </tr>
                     <!--EJERCICIO 00 - VARIABLES SUPERGLOBALES-->
                     <tr>
                         <td class="enunciado">[Ejercicio 00] - Contenido de las variables superglobales y phpinfo()</td>
