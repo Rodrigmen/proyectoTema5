@@ -211,3 +211,17 @@ footer ul li #imggit{
 footer ul li #imggit:hover{
     filter: drop-shadow(0 2px 5px white);
 }
+
+.programa{
+    text-align: center;
+}
+
+.programa input{
+    margin: 50px;
+    width: 200px;
+}
+
+.programa button:hover{
+    background-color: black;
+    color:white;
+}

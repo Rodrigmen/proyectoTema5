@@ -67,13 +67,13 @@
                     <tr>
                         <td class="enunciado">[Ejercicio 00] - Contenido de las variables superglobales y phpinfo()</td>
                         <td class="iconos">
-                            <a href="codigoPHP/ejercicio00.php">
-                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="EjecutarPDO" title="EjecutarPDO"/>
+                            <a href="codigoPHP/detalle.php">
+                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
                             </a>
                         </td>
                         <td class="iconos">
                             <a href="mostrarcodigo/mostrarEjercicio00.php">
-                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="MostrarPDO" title="MostrarPDO"/>
+                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="Mostrar" title="Mostrar"/>
                             </a>
                         </td>
                         <td>
@@ -85,13 +85,13 @@
                     <tr>
                         <td class="enunciado">[Ejercicio 01] - Control de acceso con la función header().</td>
                         <td class="iconos">
-                            <a href="codigoPHP/ejercicio01.php">
-                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="EjecutarPDO" title="EjecutarPDO"/>
+                            <a href="codigoPHP/ejercicio01/login.php">
+                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
                             </a>
                         </td>
                         <td class="iconos">
                             <a href="mostrarcodigo/mostrarEjercicio01.php">
-                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="MostrarPDO" title="MostrarPDO"/>
+                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="Mostrar" title="Mostrar"/>
                             </a>
                         </td>
                     </tr>
@@ -100,13 +100,13 @@
                     <tr>
                         <td class="enunciado">[Ejercicio 02] - Control de acceso con la función header() y la tabla 'Usuario'.</td>
                         <td class="iconos">
-                            <a href="codigoPHP/ejercicio02.php">
-                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="EjecutarPDO" title="EjecutarPDO"/>
+                            <a href="codigoPHP/ejercicio02/ejercicio02.php">
+                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
                             </a>
                         </td>
                         <td class="iconos">
                             <a href="mostrarcodigo/mostrarEjercicio02.php">
-                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="MostrarPDO" title="MostrarPDO"/>
+                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="Mostrar" title="Mostrar"/>
                             </a>
                         </td>
                         <td>

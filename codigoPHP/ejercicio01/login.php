@@ -6,14 +6,15 @@
  * @since 23-11-2020
  * @author Rodrigo Robles <rodrigo.robmin@educa.jcyl.es>
  */
-if (!isset($_SERVER['PHP_AUTH_USER'])) {
+if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER'] != 'admin' || $_SERVER['PHP_AUTH_PW'] != 'paso') {
     header('WWW-Authenticate: Basic realm="Mi dominio"');
     header('HTTP/1.0 401 Unauthorized');
-    echo 'Texto a enviar si el usuario pulsa el botón Cancelar';
+    echo "¡Usuario no valido!";
     exit;
 } else {
     echo "<p>Hola {$_SERVER['PHP_AUTH_USER']}.</p>";
     echo "<p>Introdujo {$_SERVER['PHP_AUTH_PW']} como su contraseña.</p>";
+    header('Location: programa.php');
 }
 ?> 
 <!DOCTYPE html>
