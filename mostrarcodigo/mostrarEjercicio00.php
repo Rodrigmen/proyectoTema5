@@ -15,7 +15,7 @@
          * @since 23-11-2020
          * @author Rodrigo Robles <rodrigo.robmin@educa.jcyl.es>
          */
-        $filename = "../codigoPHP/ejercicio00.php";
+        $filename = "../codigoPHP/detalle.php";
         highlight_file($filename);
         ?>
 

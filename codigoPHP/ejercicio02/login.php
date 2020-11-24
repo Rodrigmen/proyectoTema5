@@ -6,7 +6,7 @@
  * @since 24-11-2020
  * @author Rodrigo Robles <rodrigo.robmin@educa.jcyl.es>
  */
-require_once '../config/confDB.php';
+require_once '../../config/confDBCasa.php';
 try {
     $oConexionPDO = new PDO(DSN, USER, PASSWORD, CHARSET); //creo el objeto PDO con las constantes iniciadas en el archivo confDBPDO.php
     $oConexionPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //le damos este atributo a la conexión (la configuramos) para poder utilizar las excepciones
@@ -14,27 +14,30 @@ try {
     if (!isset($_SERVER['PHP_AUTH_USER'])) {
         header('WWW-Authenticate: Basic realm="Mi dominio"');
         header('HTTP/1.0 401 Unauthorized');
-        echo 'Texto a enviar si el usuario pulsa el botón Cancelar';
+        echo "¡Usuario no valido!";
         exit;
     } else {
         //Creación de la consulta preparada
-        $consultaUsuario = "SELECT CodUsuario, Password FROM Usuario WHERE (CodUsuario LIKE :codigo) AND (Password LIKE :password)";
+        $consultaUsuario = "SELECT DescUsuario, Password FROM Usuario WHERE (DescUsuario LIKE :nombre) AND (Password LIKE :password)";
         //Preparación de la consulta preparada
         $buscarUsuario = $oConexionPDO->prepare($consultaUsuario);
 
         //Insertamos los datos en la consulta preparada
+        $buscarUsuario->bindParam(':nombre', $_SERVER['PHP_AUTH_USER']);
+
         $password = hash('sha256', $_SERVER['PHP_AUTH_PW']);
-        $buscarUsuario->bindParam(':codigo', $_SERVER['PHP_AUTH_USER']);
         $buscarUsuario->bindParam(':password', $password);
 
         //Se ejecuta la consulta preparada
         $buscarUsuario->execute();
 
         $numeroResultados = $buscarUsuario->rowCount();
+
         if ($numeroResultados === 1) {
-            echo "<p>Hola {$_SERVER['PHP_AUTH_USER']}.</p>";
+            header('Location: programa.php');
         } else {
-            echo "<p>Usuario incorrecto.</p>";
+            header('WWW-Authenticate: Basic realm="Mi dominio"');
+            header('HTTP/1.0 401 Unauthorized');
         }
     }
 } catch (PDOException $errorConexion) {

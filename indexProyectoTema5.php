@@ -100,7 +100,7 @@
                     <tr>
                         <td class="enunciado">[Ejercicio 02] - Control de acceso con la función header() y la tabla 'Usuario'.</td>
                         <td class="iconos">
-                            <a href="codigoPHP/ejercicio02/ejercicio02.php">
+                            <a href="codigoPHP/ejercicio02/login.php">
                                 <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
                             </a>
                         </td>

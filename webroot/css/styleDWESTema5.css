@@ -221,7 +221,7 @@ footer ul li #imggit:hover{
     width: 200px;
 }
 
-.programa button:hover{
+.programa input:hover{
     background-color: black;
     color:white;
 }

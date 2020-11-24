@@ -15,8 +15,13 @@
          * @since 23-11-2020
          * @author Rodrigo Robles <rodrigo.robmin@educa.jcyl.es>
          */
-        $filename = "../codigoPHP/ejercicio01.php";
+        echo "<h1>Página 'login.php' del ejercicio01</h1>";
+        $filename = "../codigoPHP/ejercicio01/login.php";
         highlight_file($filename);
+        
+        echo "<h1>Página 'programa.php' del ejercicio01</h1>";
+        $filename2 = "../codigoPHP/ejercicio01/programa.php";
+        highlight_file($filename2);
         ?>
 
     </body>
