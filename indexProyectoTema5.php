@@ -53,7 +53,7 @@
                     </tr>
                     <!-- ARCHIVOS DE CONFIGURACION-->
                     <tr>
-                        <td class="enunciado">ARCHIVOS DE CONFIGURACIÓN</td>
+                        <td class="enunciado">ARCHIVO DE CONFIGURACIÓN</td>
                         <td class="iconos">
                             <a href="mostrarcodigo/mostrarConf.php">
                                 <img class="imgejer" src="webroot/css/images/mostrar.png" alt="Mostrar" title="Mostrar"/>
@@ -123,7 +123,7 @@
         <ul>
             <li>&copy2020-2021 | Rodrigo Robles Miñambres</li>
             <li>
-                <a target="_blank" href="https://github.com/Rodrigmen">
+                <a target="_blank" href="https://github.com/Rodrigmen/proyectoTema5">
                     <img id="imggit" title="GitHub" src="webroot/css/images/github.png"  alt="GITHUB">
                 </a>
             </li>

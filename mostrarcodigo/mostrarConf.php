@@ -15,21 +15,9 @@
          * @since 14-10-2020
          * @author Rodrigo Robles <rodrigo.robmin@educa.jcyl.es>
          */
-        echo '<h1>Configuración del servidor de desarrollo</h1>';
+        echo '<h1>Archivo de configuración</h1>';
         $filename = "../config/confDB.php";
         highlight_file($filename);
-
-        echo '<h1>Configuración del servidor de explotación</h1>';
-        $filename2 = "../config/confDBExplotacion.php";
-        highlight_file($filename2);
-
-        echo '<h1>Configuración del servidor 1&1</h1>';
-        $filename3 = "../config/confDBOne.php";
-        highlight_file($filename3);
-
-        echo '<h1>Configuración del servidor propio</h1>';
-        $filename4 = "../config/confDBCasa.php";
-        highlight_file($filename4);
         ?>
 
     </body>
