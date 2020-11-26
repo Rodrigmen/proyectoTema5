@@ -4,13 +4,13 @@ USE DAW218DBProyectoTema5;
 
 CREATE USER 'usuarioDAW218DBProyectoTema5'@'%' IDENTIFIED BY 'P@ssw0rd';
 
-GRANT ALL PRIVILEGES ON 'DAW218DBProyectoTema5'.* TO 'usuarioDAW218DBProyectoTema5'@'%';
+GRANT ALL PRIVILEGES ON DAW218DBProyectoTema5.* TO 'usuarioDAW218DBProyectoTema5'@'%';
 
 CREATE TABLE Departamento (
   CodDepartamento VARCHAR(3) PRIMARY KEY,
 	DescDepartamento VARCHAR(255) NOT NULL,
-	FechaBajaDepartamento DATE DEFAULT NULL, -- Valor por defecto null, ya que cuando lo creas no puede estar de baja logica
-	FechaCreacionDepartamento DATE NOT NULL,
+	FechaBajaDepartamento INT DEFAULT NULL, -- Valor por defecto null, ya que cuando lo creas no puede estar de baja logica
+	FechaCreacionDepartamento INT NOT NULL,
 	VolumenNegocio FLOAT NOT NULL
 ) ENGINE=INNODB DEFAULT CHARSET=LATIN1;
 

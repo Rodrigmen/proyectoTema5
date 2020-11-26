@@ -51,17 +51,29 @@
                             <p class="casper">         </p>
                         </td>
                     </tr>
+                    <!-- ARCHIVOS DE CONFIGURACION-->
+                    <tr>
+                        <td class="enunciado">ARCHIVO DE CONFIGURACIÓN</td>
+                        <td class="iconos">
+                            <a href="mostrarcodigo/mostrarConf.php">
+                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="Mostrar" title="Mostrar"/>
+                            </a>
+                        </td>
+                        <td>
+                            <p class="casper">         </p>
+                        </td>
+                    </tr>
                     <!--EJERCICIO 00 - VARIABLES SUPERGLOBALES-->
                     <tr>
                         <td class="enunciado">[Ejercicio 00] - Contenido de las variables superglobales y phpinfo()</td>
                         <td class="iconos">
-                            <a href="codigoPHP/ejercicio00.php">
-                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="EjecutarPDO" title="EjecutarPDO"/>
+                            <a href="codigoPHP/detalle.php">
+                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
                             </a>
                         </td>
                         <td class="iconos">
                             <a href="mostrarcodigo/mostrarEjercicio00.php">
-                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="MostrarPDO" title="MostrarPDO"/>
+                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="Mostrar" title="Mostrar"/>
                             </a>
                         </td>
                         <td>
@@ -73,13 +85,13 @@
                     <tr>
                         <td class="enunciado">[Ejercicio 01] - Control de acceso con la función header().</td>
                         <td class="iconos">
-                            <a href="codigoPHP/ejercicio01.php">
-                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="EjecutarPDO" title="EjecutarPDO"/>
+                            <a href="codigoPHP/ejercicio01/login.php">
+                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
                             </a>
                         </td>
                         <td class="iconos">
-                            <a href="mostrarcodigo/mostrarEjercicio01PDO.php">
-                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="MostrarPDO" title="MostrarPDO"/>
+                            <a href="mostrarcodigo/mostrarEjercicio01.php">
+                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="Mostrar" title="Mostrar"/>
                             </a>
                         </td>
                     </tr>
@@ -88,13 +100,13 @@
                     <tr>
                         <td class="enunciado">[Ejercicio 02] - Control de acceso con la función header() y la tabla 'Usuario'.</td>
                         <td class="iconos">
-                            <a href="codigoPHP/ejercicio02PDO.php">
-                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="EjecutarPDO" title="EjecutarPDO"/>
+                            <a href="codigoPHP/ejercicio02/login.php">
+                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
                             </a>
                         </td>
                         <td class="iconos">
-                            <a href="mostrarcodigo/mostrarEjercicio02PDO.php">
-                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="MostrarPDO" title="MostrarPDO"/>
+                            <a href="mostrarcodigo/mostrarEjercicio02.php">
+                                <img class="imgejer" src="webroot/css/images/mostrar.png" alt="Mostrar" title="Mostrar"/>
                             </a>
                         </td>
                         <td>
@@ -111,7 +123,7 @@
         <ul>
             <li>&copy2020-2021 | Rodrigo Robles Miñambres</li>
             <li>
-                <a target="_blank" href="https://github.com/Rodrigmen">
+                <a target="_blank" href="https://github.com/Rodrigmen/proyectoTema5">
                     <img id="imggit" title="GitHub" src="webroot/css/images/github.png"  alt="GITHUB">
                 </a>
             </li>
