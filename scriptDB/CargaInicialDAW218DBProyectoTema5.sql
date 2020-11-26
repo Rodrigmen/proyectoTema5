@@ -1,5 +1,4 @@
 USE DAW218DBProyectoTema5;
-
 -- Introduccion de datos dentro de la tabla creada
 INSERT INTO Departamento(CodDepartamento,DescDepartamento,FechaCreacionDepartamento, VolumenNegocio) VALUES
     ('INF', 'Departamento de informatica', 1574772123, 50),
