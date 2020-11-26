@@ -6,16 +6,16 @@
  * @since 26-11-2020
  * @author Rodrigo Robles <rodrigo.robmin@educa.jcyl.es>
  */
-require_once "../config/confDBPDO.php"; //Incluimos el archivo confDBPDO.php para poder acceder al valor de las constantes de los distintos valores de la conexión 
+require_once "../config/confDB.php"; //Incluimos el archivo confDBPDO.php para poder acceder al valor de las constantes de los distintos valores de la conexión 
 
 try {
     $miDB = new PDO(DSN, USER, PASSWORD); //Instanciamos un objeto PDO y establecemos la conexión
     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //Configuramos las excepciones
 
-    $sql = ("DELETE * FROM Departamento;");
+    $sql = ("DROP TABLE Departamento;");
     $miDB->exec($sql);
     
-    $sql2 = ("DELETE * FROM Usuario;");
+    $sql2 = ("DROP TABLE Usuario;");
     $miDB->exec($sql2);
 
     echo "<h3> <span style='color: green;'>" . "Tabla creada correctamente</span></h3>"; //Si no se ha producido ningún error nos mostrará "Conexión establecida con éxito"
