@@ -12,7 +12,7 @@ try {
     $miDB = new PDO(DSN, USER, PASSWORD); //Instanciamos un objeto PDO y establecemos la conexión
     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //Configuramos las excepciones
 
-    $sql = ("INSERT INTO Departamento(CodDepartamento,DescDepartamento,FechaCreacionDepartamento, VolumenNegocio) VALUES
+    $sql = ("INSERT INTO T02_Departamento(T02_CodDepartamento,T02_DescDepartamento,T02_FechaCreacionDepartamento,T02_VolumenNegocio) VALUES
     ('INF', 'Departamento de informatica', 1574772123, 50),
     ('VEN', 'Departamento de ventas', 1574772123, 800000),
     ('CON', 'Departamento de contabilidad', 1574772123, 900000),
@@ -23,7 +23,7 @@ try {
 
     $miDB->exec($sql);
     
-    $sql2 = ("INSERT INTO Usuario(CodUsuario, DescUsuario, Password) VALUES
+    $sql2 = ("INSERT INTO T01_Usuario(T01_CodUsuario, T01_DescUsuario, T01_Password) VALUES
     ('nereaA','NereaA',SHA2('nereaApaso',256)),
     ('miguel','Miguel',SHA2('miguelpaso',256)),
     ('bea','Bea',SHA2('beapaso',256)),
@@ -47,8 +47,11 @@ try {
 
 
     $miDB->exec($sql2);
+    
+    $sql3 = ("INSERT INTO T01_Usuario(T01_CodUsuario, T01_DescUsuario, T01_Password, T01_Perfil) VALUES ('admin','admin',SHA2('adminpaso',256), 'administrador');");
+    $miDB->exec($sql3);  
 
-    echo "<h3> <span style='color: green;'>" . "Tabla creada correctamente</span></h3>"; //Si no se ha producido ningún error nos mostrará "Conexión establecida con éxito"
+    echo "<h3> <span style='color: green;'>" . "Tablas cargadas correctamente</span></h3>"; //Si no se ha producido ningún error nos mostrará "Conexión establecida con éxito"
 } catch (PDOException $excepcion) {//Código que se ejecutará si se produce alguna excepción
     $errorExcepcion = $excepcion->getCode(); //Almacenamos el código del error de la excepción en la variable $errorExcepcion
     $mensajeExcepcion = $excepcion->getMessage(); //Almacenamos el mensaje de la excepción en la variable $mensajeExcepcion

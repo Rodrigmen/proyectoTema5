@@ -12,11 +12,13 @@ try {
     $miDB = new PDO(DSN, USER, PASSWORD); //Instanciamos un objeto PDO y establecemos la conexión
     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //Configuramos las excepciones
 
+    $sql = ("DROP TABLE  T02_Departamento;");
+    $miDB->exec($sql);
     
-    $sql2 = ("DROP TABLE Usuario;");
+    $sql2 = ("DROP TABLE  T01_Usuario;");
     $miDB->exec($sql2);
 
-    echo "<h3> <span style='color: green;'>" . "Tabla creada correctamente</span></h3>"; //Si no se ha producido ningún error nos mostrará "Conexión establecida con éxito"
+    echo "<h3> <span style='color: green;'>" . "Tabla borradas correctamente</span></h3>"; //Si no se ha producido ningún error nos mostrará "Conexión establecida con éxito"
 } catch (PDOException $excepcion) {//Código que se ejecutará si se produce alguna excepción
     $errorExcepcion = $excepcion->getCode(); //Almacenamos el código del error de la excepción en la variable $errorExcepcion
     $mensajeExcepcion = $excepcion->getMessage(); //Almacenamos el mensaje de la excepción en la variable $mensajeExcepcion

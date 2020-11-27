@@ -6,39 +6,39 @@
  * @since 24-11-2020
  * @author Rodrigo Robles <rodrigo.robmin@educa.jcyl.es>
  */
+if (!isset($_SERVER['PHP_AUTH_USER']) || (!isset($_SERVER['PHP_AUTH_PW']))) {
+    header('WWW-Authenticate: Basic realm="Mi dominio"');
+    header('HTTP/1.0 401 Unauthorized');
+    echo "¡Usuario no valido!";
+    exit;
+}
 require_once '../../config/confDB.php';
 try {
     $oConexionPDO = new PDO(DSN, USER, PASSWORD, CHARSET); //creo el objeto PDO con las constantes iniciadas en el archivo confDBPDO.php
     $oConexionPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //le damos este atributo a la conexión (la configuramos) para poder utilizar las excepciones
 
-    if (!isset($_SERVER['PHP_AUTH_USER'])) {
+    $codigoIntroducido = $_SERVER['PHP_AUTH_USER'];
+    $passwordIntroducida = $_SERVER['PHP_AUTH_PW'];
+
+    //Creación de la consulta preparada
+    $consultaUsuario = "SELECT T01_CodUsuario, T01_Password FROM T01_Usuario WHERE T01_CodUsuario = :codigo";
+    //Preparación de la consulta preparada
+    $buscarUsuario = $oConexionPDO->prepare($consultaUsuario);
+
+    //Insertamos los datos en la consulta preparada
+    $buscarUsuario->bindParam(':codigo', $codigoIntroducido);
+
+    //Se ejecuta la consulta preparada
+    $buscarUsuario->execute();
+    $oUsuario = $buscarUsuario->fetchObject();
+
+    if (($oUsuario->T01_CodUsuario == $codigoIntroducido) && ($oUsuario->T01_Password == hash("sha256", $codigoIntroducido . $passwordIntroducida))) {
+        header('Location: programa.php');
+    } else {
         header('WWW-Authenticate: Basic realm="Mi dominio"');
         header('HTTP/1.0 401 Unauthorized');
         echo "¡Usuario no valido!";
         exit;
-    } else {
-        //Creación de la consulta preparada
-        $consultaUsuario = "SELECT DescUsuario, Password FROM Usuario WHERE (DescUsuario LIKE :nombre) AND (Password LIKE :password)";
-        //Preparación de la consulta preparada
-        $buscarUsuario = $oConexionPDO->prepare($consultaUsuario);
-
-        //Insertamos los datos en la consulta preparada
-        $buscarUsuario->bindParam(':nombre', $_SERVER['PHP_AUTH_USER']);
-
-        $password = hash('sha256', $_SERVER['PHP_AUTH_PW']);
-        $buscarUsuario->bindParam(':password', $password);
-
-        //Se ejecuta la consulta preparada
-        $buscarUsuario->execute();
-
-        $numeroResultados = $buscarUsuario->rowCount();
-
-        if ($numeroResultados === 1) {
-            header('Location: programa.php');
-        } else {
-            header('WWW-Authenticate: Basic realm="Mi dominio"');
-            header('HTTP/1.0 401 Unauthorized');
-        }
     }
 } catch (PDOException $errorConexion) {
     echo "Mensaje de error: " . $errorConexion->getMessage();
