@@ -12,8 +12,6 @@ try {
     $miDB = new PDO(DSN, USER, PASSWORD); //Instanciamos un objeto PDO y establecemos la conexión
     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //Configuramos las excepciones
 
-    $sql = ("DROP TABLE Departamento;");
-    $miDB->exec($sql);
     
     $sql2 = ("DROP TABLE Usuario;");
     $miDB->exec($sql2);

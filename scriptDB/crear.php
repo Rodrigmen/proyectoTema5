@@ -12,17 +12,6 @@ try {
     $miDB = new PDO(DSN, USER, PASSWORD); //Instanciamos un objeto PDO y establecemos la conexión
     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //Configuramos las excepciones
 
-    $sql = ("CREATE TABLE Departamento (
-  CodDepartamento VARCHAR(3) PRIMARY KEY,
-	DescDepartamento VARCHAR(255) NOT NULL,
-	FechaBajaDepartamento INT DEFAULT NULL, 
-	FechaCreacionDepartamento INT NOT NULL,
-	VolumenNegocio FLOAT NOT NULL
-) ENGINE=INNODB DEFAULT CHARSET=LATIN1;");
-
-
-
-    $miDB->exec($sql);
 
     $sql2 = ("CREATE TABLE Usuario (
 	CodUsuario VARCHAR(15) PRIMARY KEY,
