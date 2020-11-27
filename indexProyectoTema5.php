@@ -51,40 +51,6 @@
                             <p class="casper">         </p>
                         </td>
                     </tr>
-                    <!--CREAR, CARGAR Y BORRAR-->
-                    <tr>
-                        <td class="enunciado">CREAR (SCRIPT)</td>
-                        <td class="iconos">
-                            <a href="scriptDB/crear.php">
-                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
-                            </a>
-                        </td>
-                        <td>
-                            <p class="casper">         </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="enunciado">CARGAR (SCRIPT)</td>
-                        <td class="iconos">
-                            <a href="scriptDB/cargar.php">
-                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
-                            </a>
-                        </td>
-                        <td>
-                            <p class="casper">         </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="enunciado">BORRAR (SCRIPT)</td>
-                        <td class="iconos">
-                            <a href="scriptDB/borrar.php">
-                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
-                            </a>
-                        </td>
-                        <td>
-                            <p class="casper">         </p>
-                        </td>
-                    </tr>
                     <!-- ARCHIVOS DE CONFIGURACION-->
                     <tr>
                         <td class="enunciado">ARCHIVO DE CONFIGURACIÓN</td>
@@ -157,7 +123,7 @@
         <ul>
             <li>&copy2020-2021 | Rodrigo Robles Miñambres</li>
             <li>
-                <a target="_blank" href="https://github.com/Rodrigmen/proyectoTema5/tree/master">
+                <a target="_blank" href="https://github.com/Rodrigmen/proyectoTema5/tree/developer">
                     <img id="imggit" title="GitHub" src="webroot/css/images/github.png"  alt="GITHUB">
                 </a>
             </li>
