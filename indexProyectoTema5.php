@@ -117,7 +117,7 @@
                     <tr>
                         <td class="enunciado">[APLICACIÓN] - LoginLogoff.</td>
                         <td class="iconos">
-                            <a href="codigoPHP/LoginLogoffTema5/login.php">
+                            <a href="LoginLogoffTema5/login.php">
                                 <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
                             </a>
                         </td>
