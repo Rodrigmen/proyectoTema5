@@ -113,6 +113,18 @@
                             <p class="casper">         </p>
                         </td>
                     </tr>
+                    <!--LoginLogoffTema5-->
+                    <tr>
+                        <td class="enunciado">[APLICACIÓN] - LoginLogoff.</td>
+                        <td class="iconos">
+                            <a href="codigoPHP/LoginLogoffTema5/login.php">
+                                <img class="imgejer" src="webroot/css/images/ejecutar.png" alt="Ejecutar" title="Ejecutar"/>
+                            </a>
+                        </td>
+                        <td>
+                            <p class="casper">         </p>
+                        </td>
+                    </tr>
                 </table>
             </div>
 
